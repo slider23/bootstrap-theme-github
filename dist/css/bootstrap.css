@@ -966,10 +966,10 @@ input[type="color"],
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear .2s, box-shadow linear .2s;
-  -moz-transition: border linear .2s, box-shadow linear .2s;
-  -o-transition: border linear .2s, box-shadow linear .2s;
-  transition: border linear .2s, box-shadow linear .2s;
+  -webkit-transition: border linear .2s, box-shadow linear .05s;
+  -moz-transition: border linear .2s, box-shadow linear .05s;
+  -o-transition: border linear .2s, box-shadow linear .05s;
+  transition: border linear .2s, box-shadow linear .05s;
 }
 textarea:focus,
 input[type="text"]:focus,
@@ -1474,7 +1474,7 @@ select:focus:invalid:focus {
   width: auto;
   height: 18px;
   min-width: 16px;
-  padding: 4px 5px;
+  padding: 3px 5px;
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
@@ -2848,33 +2848,30 @@ fieldset[disabled] .btn.active {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 .btn-primary {
-  background-color: #eaeaea;
-  background-image: linear-gradient(#fafafa, #eaeaea);
-  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
-  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-color: #3072b3;
+  background-image: linear-gradient(#599bcd, #3072b3);
+  background-image: -moz-linear-gradient(#599bcd, #3072b3);
+  background-image: -webkit-linear-gradient(#599bcd, #3072b3);
   background-repeat: repeat-x;
-  border: 1px solid #ddd;
-  border-bottom-color: #c5c5c5;
-  color: #2a567d;
+  border-color: #317bbd;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #dadada;
-  background-image: linear-gradient(#eaeaea, #dadada);
-  background-image: -moz-linear-gradient(#eaeaea, #dadada);
-  background-image: -webkit-linear-gradient(#eaeaea, #dadada);
+  background-color: #224d80;
+  background-image: linear-gradient(#5a8fc1, #3066a7);
+  background-image: -moz-linear-gradient(#5a8fc1, #3066a7);
+  background-image: -webkit-linear-gradient(#5a8fc1, #3066a7);
   background-repeat: repeat-x;
-  border-color: #ccc #ccc #b5b5b5;
-  text-decoration: none;
-  color: #2a567d;
+  border-color: #317bbd;
+  color: #fff;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #dadada;
+  background-color: #224d80;
   background-image: none;
-  border-color: #b5b5b5;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
-  color: #2a567d;
+  border-color: #317bbd;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -2891,14 +2888,14 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #e5e5e5;
-  background-image: none;
-  border-color: #c5c5c5;
-  box-shadow: none;
-  color: #2a567d;
-  cursor: default;
-  opacity: .5;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  background-color: #3478bf;
+  background-image: linear-gradient(#599bcd, #3072b3);
+  background-image: -moz-linear-gradient(#599bcd, #3072b3);
+  background-image: -webkit-linear-gradient(#599bcd, #3072b3);
+  background-repeat: repeat-x;
+  border-color: #285891;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-warning {
   background-color: #eaeaea;
@@ -3056,30 +3053,33 @@ fieldset[disabled] .btn-success.active {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-info {
-  background-color: #3072b3;
-  background-image: linear-gradient(#599bcd, #3072b3);
-  background-image: -moz-linear-gradient(#599bcd, #3072b3);
-  background-image: -webkit-linear-gradient(#599bcd, #3072b3);
+  background-color: #eaeaea;
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
   background-repeat: repeat-x;
-  border-color: #317bbd;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  color: #407fbc;
 }
 .btn-info:hover,
 .btn-info:focus {
-  background-color: #285a93;
-  background-image: linear-gradient(#599bcd, #3072b3);
-  background-image: -moz-linear-gradient(#599bcd, #3072b3);
-  background-image: -webkit-linear-gradient(#599bcd, #3072b3);
+  background-color: #dadada;
+  background-image: linear-gradient(#eaeaea, #dadada);
+  background-image: -moz-linear-gradient(#eaeaea, #dadada);
+  background-image: -webkit-linear-gradient(#eaeaea, #dadada);
   background-repeat: repeat-x;
-  border-color: #285891;
-  color: #fff;
+  border-color: #ccc #ccc #b5b5b5;
+  text-decoration: none;
+  color: #2a567d;
 }
 .btn-info:active,
 .btn-info.active {
-  background-color: #285a93;
+  background-color: #dadada;
   background-image: none;
-  border-color: #285891;
+  border-color: #b5b5b5;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+  color: #2a567d;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -3096,14 +3096,14 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #3478bf;
-  background-image: linear-gradient(#599bcd, #3072b3);
-  background-image: -moz-linear-gradient(#599bcd, #3072b3);
-  background-image: -webkit-linear-gradient(#599bcd, #3072b3);
-  background-repeat: repeat-x;
-  border-color: #285891;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e5e5e5;
+  background-image: none;
+  border-color: #c5c5c5;
+  box-shadow: none;
+  color: #2a567d;
+  cursor: default;
+  opacity: .5;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 .btn-inverse {
   background-color: #eaeaea;
@@ -3498,7 +3498,7 @@ input[type="submit"].btn.btn-mini {
   color: #468847;
 }
 .alert-success h4 {
-  color: #02a100;
+  color: #468847;
 }
 .alert-danger,
 .alert-error {
@@ -3508,7 +3508,7 @@ input[type="submit"].btn.btn-mini {
 }
 .alert-danger h4,
 .alert-error h4 {
-  color: #da3727;
+  color: #924846;
 }
 .alert-info {
   background-color: #d9edf7;
