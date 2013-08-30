@@ -10,12 +10,34 @@
   .btn-default & {
     border-top-color: @btn-default-color;
   }
+  //.btn-primary &,
+  //.btn-success &,
+  //.btn-warning &,
+  //.btn-danger &,
+  //.btn-info & {
+  //  border-top-color: #fff;
+  //}
   .btn-primary &,
-  .btn-success &,
-  .btn-warning &,
-  .btn-danger &,
-  .btn-info & {
-    border-top-color: #fff;
+  .btn-success &{
+      border-top-color: #fff;
+  }
+  .btn-warning &{
+      border-top-color: #f28722;
+  }
+  .btn-danger &{
+      border-top-color: #900;
+  }
+  .btn-danger:hover &{
+      border-top-color: #fff;
+  }
+  .btn-danger:active &{
+      border-top-color: #fff;
+  }
+  .btn-danger:focus &{
+      border-top-color: #fff;
+  }
+  .btn-info &{
+      border-top-color: #2a567d;
   }
 }
 .dropup {
@@ -23,12 +45,25 @@
     border-bottom-color: @btn-default-color;
   }
   .btn-primary,
-  .btn-success,
-  .btn-warning,
-  .btn-danger,
-  .btn-info {
+  .btn-success
+   {
    .caret {
       border-bottom-color: #fff;
+    }
+  }
+  .btn-warning{
+    .caret{
+      border-bottom-color: #f28722;
+    }
+  }
+  .btn-danger{
+    .caret{
+      border-bottom-color: #900;
+    }
+  }
+  .btn-info{
+    .caret{
+      border-bottom-color: #2a567d;
     }
   }
 }

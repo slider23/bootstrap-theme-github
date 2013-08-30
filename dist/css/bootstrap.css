@@ -2996,21 +2996,42 @@ input[type="button"].btn-block {
   border-top-color: #333333;
 }
 .btn-primary .caret,
-.btn-success .caret,
-.btn-warning .caret,
-.btn-danger .caret,
-.btn-info .caret {
+.btn-success .caret {
   border-top-color: #fff;
+}
+.btn-warning .caret {
+  border-top-color: #f28722;
+}
+.btn-danger .caret {
+  border-top-color: #900;
+}
+.btn-danger:hover .caret {
+  border-top-color: #fff;
+}
+.btn-danger:active .caret {
+  border-top-color: #fff;
+}
+.btn-danger:focus .caret {
+  border-top-color: #fff;
+}
+.btn-info .caret {
+  border-top-color: #2a567d;
 }
 .dropup .btn-default .caret {
   border-bottom-color: #333333;
 }
 .dropup .btn-primary .caret,
-.dropup .btn-success .caret,
-.dropup .btn-warning .caret,
-.dropup .btn-danger .caret,
-.dropup .btn-info .caret {
+.dropup .btn-success .caret {
   border-bottom-color: #fff;
+}
+.dropup .btn-warning .caret {
+  border-bottom-color: #f28722;
+}
+.dropup .btn-danger .caret {
+  border-bottom-color: #900;
+}
+.dropup .btn-info .caret {
+  border-bottom-color: #2a567d;
 }
 .btn-group,
 .btn-group-vertical {
@@ -3438,6 +3459,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
+  color: #555555;
   margin-right: 2px;
   line-height: 1.384615384615385;
   border: 1px solid transparent;
