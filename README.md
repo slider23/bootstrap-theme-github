@@ -4,7 +4,7 @@ Demo: http://slider23.github.io/bootstrap-theme-github/
 
 ## Installation
 
-Replace original bootstrap.css or bootstrap.min.css
+Replace original `bootstrap.css` or `bootstrap.min.css` by `dist/css/bootstrap.css` or `dist/css/bootstrap.min.css`
 
 ## Build with Themestrap
 
