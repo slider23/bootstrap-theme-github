@@ -1,5 +1,7 @@
 # Github theme for Twiter Bootstrap 3.x.x
 
+No more ugly huge elements. No more big fonts. No more candy-style buttons.
+Only strict and perfect beauty.
 Demo: http://slider23.github.io/bootstrap-theme-github/
 
 ## Installation
