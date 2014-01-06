@@ -1,4 +1,4 @@
-# Github theme for Twiter Bootstrap 3.x.x
+# Github theme for Twitter Bootstrap 3.0.0
 
 No more ugly huge elements. No more big fonts. No more candy-style buttons.
 Only strict and perfect beauty.
