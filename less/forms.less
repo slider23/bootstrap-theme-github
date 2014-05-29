@@ -50,12 +50,12 @@ input[type="search"] {
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 1px 0 0;
+  margin: 4px 0 0;
   margin-top: 1px \9; /* IE8-9 */
   line-height: normal;
 }
 
-// Set the height of select and file controls to match text inputs
+// Set the height of file controls to match text inputs
 input[type="file"] {
   display: block;
 }
@@ -335,7 +335,7 @@ input[type="checkbox"],
 .form-inline {
 
   // Kick in the inline
-  @media (min-width: @screen-tablet) {
+  @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
     .form-group  {
       display: inline-block;
