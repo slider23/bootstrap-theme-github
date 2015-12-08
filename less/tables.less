@@ -86,20 +86,11 @@ th {
 // Add borders all around the table and between all the columns.
 
 .table-bordered {
-  border: 1px solid @table-border-color;
+  border: none;
+  border-collapse: inherit;
   > thead,
   > tbody,
   > tfoot {
-    > tr:first-child {
-      > th:nth-of-type(1),
-      > td:nth-of-type(1) {
-        border-top-left-radius: 4px;
-      }
-      > th:nth-last-of-type(1),
-      > td:nth-last-of-type(1) {
-        border-top-right-radius: 4px;
-      }
-    }
     > tr:last-child {
       > td:nth-of-type(1) {
         border-bottom-left-radius: 4px;
@@ -115,10 +106,19 @@ th {
       }
     }
   }
-  > thead > tr {
+  > thead:first-child > tr:first-child {
     > th,
     > td {
-      border-bottom-width: 1px;
+      border-top: 1px solid @table-border-color;
+      border-bottom: 0;
+    }
+    > th:nth-of-type(1),
+    > td:nth-of-type(1) {
+      border-top-left-radius: 4px;
+    }
+    > th:nth-last-of-type(1),
+    > td:nth-last-of-type(1) {
+      border-top-right-radius: 4px;
     }
   }
 }
