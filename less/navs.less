@@ -121,10 +121,13 @@
 
     // Links rendered as pills
     > a {
-      border-radius: 5px;
+      border-radius: 0;
+      border-left: 1px solid @nav-tabs-border-color;
+      border-top: 1px solid @nav-tabs-border-color;
+      border-bottom: 1px solid @nav-tabs-border-color;
     }
     + li {
-      margin-left: 2px;
+      margin-left: 0px;
     }
 
     // Active state
@@ -136,6 +139,15 @@
         background-color: @nav-pills-active-link-hover-bg;
       }
     }
+  }
+
+  > li:nth-of-type(1) > a {
+    border-radius: @nav-pills-border-radius 0 0 @nav-pills-border-radius;
+  }
+
+  > li:nth-last-of-type(1) > a {
+    border-radius: 0 @nav-pills-border-radius @nav-pills-border-radius 0;
+    border-right: 1px solid @nav-tabs-border-color;
   }
 }
 
