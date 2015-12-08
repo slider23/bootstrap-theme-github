@@ -92,6 +92,10 @@ th {
   > tbody,
   > tfoot {
     > tr:last-child {
+      > th,
+      > td {
+        border-bottom: 1px solid @table-border-color;
+      }
       > td:nth-of-type(1) {
         border-bottom-left-radius: 4px;
       }
@@ -103,6 +107,7 @@ th {
       > th,
       > td {
         border: 1px solid @table-border-color;
+        border-bottom: 0;
       }
     }
   }
