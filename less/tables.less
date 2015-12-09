@@ -108,6 +108,11 @@ th {
       > td {
         border: 1px solid @table-border-color;
         border-bottom: 0;
+        border-right: 0;
+      }
+      > th:nth-last-of-type(1),
+      > td:nth-last-of-type(1) {
+        border-right: 1px solid @table-border-color;
       }
     }
   }
